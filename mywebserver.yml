@@ -1,4 +1,4 @@
-- hosts: mywebservers
+- hosts: all
   become: yes
   gather_facts: yes
   tasks:
