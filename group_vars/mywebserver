@@ -1,5 +1,5 @@
-[mywebserver:vars]
-mypackegonubuntu:apache2
-mypackonredhat:httpd
-mypackinstallubuntu:openjdk-8-jre
-mypackjavaonredhat:java-1.8.0-openjdk
+---
+mypackegonubuntu: apache2
+mypackonredhat: httpd
+mypackinstallubuntu: openjdk-8-jre
+mypackjavaonredhat: java-1.8.0-openjdk
