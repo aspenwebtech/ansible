@@ -13,3 +13,8 @@
       name: apache2
       state: started
     when: ansible_os_family=="Debian" 
+  - name: i want to install apache2 in Redhat
+      yum:
+       name: apache2
+       state: present
+        
