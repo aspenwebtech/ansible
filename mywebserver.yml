@@ -4,7 +4,7 @@
   tasks:
   - name: i want to install apache2 webserver on ubuntu
     apt:
-      name: apache2
+      name: "{{mypackegonubuntu}}"
       state: present
     when: ansible_os_family=="Debian"
 
@@ -16,6 +16,19 @@
 
   - name: i want to install webserver on Redhat
     yum:
-      name: httpd
+      name: "{{mypackonredhat}}"
       state: present
     when: ansible_os_family=="RedHat"
+
+  - name: i want to install java on ubuntu
+    apt:
+      name: mypackinstallubuntu
+      state: present
+    when: ansible_os_family=="Debian"
+
+  - name: i want install java on RedHat  
+    yum: 
+      name: mypackjavaonredhat
+      state: present
+    when: ansible_os_family=="RedHat"
+      
