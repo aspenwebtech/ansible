@@ -10,13 +10,13 @@
 
   - name: i want to install java on ubuntu
     apt:
-      name: mypackinstallubuntu
+      name: "{{mypackinstallubuntu}}"
       state: present
     when: ansible_os_family=="Debian"
 
   - name: i want install java on RedHat  
     yum: 
-      name: mypackjavaonredhat
+      name: "{{mypackjavaonredhat}}"
       state: present
     when: ansible_os_family=="RedHat"
       
