@@ -6,7 +6,6 @@
       apt:
         name: git
         state: present
-        tags
    - name: install wget
      apt:
        name: wget
