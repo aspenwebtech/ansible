@@ -1,8 +1,8 @@
 ---
- - hosts: 172.31.37.113
+ - hosts: 172.31.45.36
    become: yes
    tasks: 
-    - name: install git
+    - name: install java
       yum:
         name: openjdk-11-jre
         state: present
