@@ -15,6 +15,6 @@
     - name: install tree
       apt:  
        name: tree
-       state: present
+       state: presen
       tags: mytree
 
