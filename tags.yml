@@ -5,17 +5,14 @@
     - name: install java
       apt:
         name: openjdk-11-jre
-        state: present
-      tags: myjava11  
+        state: present 
     - name: install wget
       apt:
        name: wget
        state: presen
-      tags: mywget
       ignore_errors: yes
     - name: install tree
       apt:  
        name: tree
        state: present
-      tags: mytree
-
+     
