@@ -3,16 +3,16 @@
    become: yes
    tasks: 
     - name: install java
-      yum:
+      apt:
         name: openjdk-11-jre
         state: present
     - name: install wget
-      yum:
+      apt:
        name: wget
        state: present
 
     - name: install tree
-      yum:  
+      apt:  
        name: tree
        state: present
 
