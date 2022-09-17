@@ -12,8 +12,8 @@
        name: wget
        state: presen
       tags: mywget
+    - ignore_errors: yes
     - name: install tree
-      ignore_errors: yes
       apt:  
        name: tree
        state: present
