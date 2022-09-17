@@ -10,11 +10,11 @@
     - name: install wget
       apt:
        name: wget
-       state: present
+       state: presen
       tags: mywget
     - name: install tree
       apt:  
        name: tree
-       state: presen
+       state: present
       tags: mytree
 
