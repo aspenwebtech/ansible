@@ -1,18 +1,18 @@
 ---
- - hosts: 172.31.45.36
+ - hosts: 172.31.37.113
    become: yes
    tasks: 
     - name: install git
-      apt:
+      yum:
         name: openjdk-11-jre
         state: present
     - name: install wget
-      apt:
+      yum:
        name: wget
        state: present
 
     - name: install tree
-      apt:  
+      yum:  
        name: tree
        state: present
 
